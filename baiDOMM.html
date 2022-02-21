@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="st1" placeholder="Số thứ nhất">
+    <input type="text" id="st2" placeholder="Số thứ hai">
+    <br>
+    <br>
+    <button onclick="cong()">Cộng(+)</button>
+    <button onclick="tru()">Trừ (-)</button>
+    <button onclick="nhan()">Nhân (*)</button>
+    <button onclick="chia()">Chia (/)</button>
+    <br>
+    <br>
+    <h1 id="kq">Kết quả là :</h1>
+    <script>
+        function cong() {
+            let a = +document.getElementById("st1").value;
+            let b = +document.getElementById("st2").value;
+            document.getElementById("kq").innerHTML ="Kết quả là :"+ (a + b);
+        }
+        function tru() {
+            let a = +document.getElementById("st1").value;
+            let b = +document.getElementById("st2").value;
+            document.getElementById("kq").innerHTML ="Kết quả là :" + (a - b);
+        }
+        function nhan() {
+            let a = +document.getElementById("st1").value;
+            let b = +document.getElementById("st2").value;
+            document.getElementById("kq").innerHTML ="Kết quả là :" + (a * b);
+        }
+        function chia() {
+            let a = +document.getElementById("st1").value;
+            let b = +document.getElementById("st2").value;
+            document.getElementById("kq").innerHTML ="Kết quả là :" +( a / b);
+        }
+    </script>
+</body>
+
+</html>
